@@ -3,7 +3,7 @@ import seaborn.objects as so
 import pandas
 
 def normalized_percent_graphs(df, columns, plot_filename, include_null=False,
-                              prints=False):
+                              prints=False,xlabel='Source'):
     """
     Takes dataframes and columns (either a list or a dict
     wherein the key is the real column name and the values are
@@ -31,23 +31,29 @@ def normalized_percent_graphs(df, columns, plot_filename, include_null=False,
 
     df_list = []
     for eachcol in columns.keys():
-        sub_df=df.query(f'`{eachcol}` != ""')
+        if not include_null:
+            sub_df=df.query(f'`{eachcol}` != ""')
+        else:
+            sub_df=df
         if prints:
             print(sub_df.shape,sub_df[eachcol].value_counts())
         normed_df = sub_df[eachcol].value_counts(normalize=True)
         normed_df = normed_df.rename(columns[eachcol])# have to do it here, newlines in the query are sad :(
         df_list.append(normed_df)
     normed_df = pandas.concat(df_list,axis=1)
-    normed_df.fillna(0,inplace=True)
+    if not include_null:
+        normed_df.fillna(0,inplace=True)
 
     melted = normed_df.melt(ignore_index=False)
     melted = melted.reset_index(names='percent')
+    melted = melted.sort_values(by=['percent']).reset_index(drop=True)
     if prints:
         print("Melted results",melted)
+    melted
 
     p = (so.Plot(melted,x='variable',y='value',color='percent')
         .add(so.Bar(), so.Stack())
-        .layout(size=(6,4))
-        .label(x="Source",y="Fraction of answers",color="Budget fraction")
+        .layout(size=(8,4))
+        .label(x="Source",y="Fraction of answers",legend='Budget fraction')
         )
-    p.save(loc=plot_filename)
+    p.save(loc=plot_filename, bbox_inches="tight")
