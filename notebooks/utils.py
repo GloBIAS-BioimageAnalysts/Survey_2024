@@ -1,4 +1,4 @@
-import seaborn
+import seaborn as sns
 import seaborn.objects as so
 import pandas
 
@@ -57,3 +57,55 @@ def normalized_percent_graphs(df, columns, plot_filename, include_null=False,
         .label(x="Source",y="Fraction of answers",legend='Budget fraction')
         )
     p.save(loc=plot_filename, bbox_inches="tight")
+
+def select_all_that_apply_hist_facet(df,question_col,facet_col=False,drop_empty=True,how='facet'):
+    """
+    Make a faceted (or not) graph from a "select all that apply" column
+    You can drop just empties in the facet col ('facet'), question('question'),
+    neither(False) or all (True)
+    TODO - axes renaming, saving
+    """
+    df.fillna('',inplace=True)
+    if drop_empty==False:
+        facet_drop = False
+        q_drop = False
+    elif drop_empty=='facet':
+        facet_drop=True
+        q_drop=False
+    elif drop_empty=='question':
+        facet_drop=False
+        q_drop=True
+    else:
+        facet_drop=True
+        q_drop=True
+    df_list = []
+    if facet_col:
+        facet_vals = list(set(df[facet_col]))
+        if facet_drop:
+            facet_vals.remove('')
+    else:
+        facet_vals = [0]
+    for facet in facet_vals:
+        if facet_col:
+            sub_df = df.query(f'`{facet_col}` == "{facet}"')
+        else:
+            sub_df=df
+        if q_drop:
+            sub_df = sub_df.query(f'`{question_col}` != ""')
+        flat_list = []
+        for x in sub_df[question_col]:
+            flat_list+=(x.split(', '))
+        flat_series = pandas.Series(flat_list,name=facet)
+        value_counts = flat_series.value_counts(normalize=True)
+        value_counts.rename(facet,inplace=True)
+        df_list.append(value_counts)
+    normed_df = pandas.concat(df_list,axis=1)
+
+    melted = normed_df.melt(ignore_index=False)
+    melted = melted.reset_index(names='percent')
+    melted = melted.sort_values(by=['variable','percent']).reset_index(drop=True)
+    if how=='facet':
+        sns.catplot(melted,y='percent',x='value',col='variable',kind='bar',col_wrap=4)
+    elif how=='color':
+        sns.catplot(melted,y='percent',x='value',hue='variable',kind='bar')
+    
