@@ -64,8 +64,8 @@ def select_all_that_apply_hist_facet(df,question_col,plot_filename,options_dict=
     """
     Make a faceted (or not) graph from a "select all that apply" column
     You can drop just empties in the facet col ('facet'), question('question'),
-    neither(False) or all (True)
-    TODO - axes renaming, saving
+    neither(False) or all (True). You can choose to show facet as colors or columns,
+    and optionally rename the column names with shortnames. 
     """
     df.fillna('',inplace=True)
     if drop_empty==False:
