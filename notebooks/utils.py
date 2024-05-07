@@ -1,6 +1,7 @@
+import matplotlib.pyplot as plt
+import pandas
 import seaborn as sns
 import seaborn.objects as so
-import pandas
 
 def normalized_percent_graphs(df, columns, plot_filename, include_null=False,
                               prints=False,xlabel='Source'):
@@ -58,7 +59,8 @@ def normalized_percent_graphs(df, columns, plot_filename, include_null=False,
         )
     p.save(loc=plot_filename, bbox_inches="tight")
 
-def select_all_that_apply_hist_facet(df,question_col,facet_col=False,drop_empty=True,how='facet'):
+def select_all_that_apply_hist_facet(df,question_col,plot_filename,facet_col=False,
+                                     drop_empty=True,how='facet',ylabel='Options'):
     """
     Make a faceted (or not) graph from a "select all that apply" column
     You can drop just empties in the facet col ('facet'), question('question'),
@@ -105,7 +107,10 @@ def select_all_that_apply_hist_facet(df,question_col,facet_col=False,drop_empty=
     melted = melted.reset_index(names='percent')
     melted = melted.sort_values(by=['variable','percent']).reset_index(drop=True)
     if how=='facet':
-        sns.catplot(melted,y='percent',x='value',col='variable',kind='bar',col_wrap=4)
+        g = sns.catplot(melted,y='percent',x='value',col='variable',kind='bar',col_wrap=4)
+        g.set_axis_labels("Fraction of answers",ylabel)
     elif how=='color':
         sns.catplot(melted,y='percent',x='value',hue='variable',kind='bar')
-    
+        plt.ylabel(ylabel)
+        plt.xlabel("Fraction of answers")
+    plt.savefig(plot_filename)
