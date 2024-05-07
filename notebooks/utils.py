@@ -55,7 +55,7 @@ def normalized_percent_graphs(df, columns, plot_filename, include_null=False,
     p = (so.Plot(melted,x='variable',y='value',color='percent')
         .add(so.Bar(), so.Stack())
         .layout(size=(8,4))
-        .label(x="Source",y="Fraction of answers",legend='Budget fraction')
+        .label(x=xlabel,y="Fraction of answers",legend='Budget fraction')
         )
     p.save(loc=plot_filename, bbox_inches="tight")
 
