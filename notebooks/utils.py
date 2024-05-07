@@ -59,8 +59,8 @@ def normalized_percent_graphs(df, columns, plot_filename, include_null=False,
         )
     p.save(loc=plot_filename, bbox_inches="tight")
 
-def select_all_that_apply_hist_facet(df,question_col,plot_filename,facet_col=False,
-                                     drop_empty=True,how='facet',ylabel='Options'):
+def select_all_that_apply_hist_facet(df,question_col,plot_filename,options_dict=False,
+                                     facet_col=False, drop_empty=True,how='facet',ylabel='Options'):
     """
     Make a faceted (or not) graph from a "select all that apply" column
     You can drop just empties in the facet col ('facet'), question('question'),
@@ -97,6 +97,7 @@ def select_all_that_apply_hist_facet(df,question_col,plot_filename,facet_col=Fal
         flat_list = []
         for x in sub_df[question_col]:
             flat_list+=(x.split(', '))
+        flat_list = [options_dict[x] for x in flat_list]
         flat_series = pandas.Series(flat_list,name=facet)
         value_counts = flat_series.value_counts(normalize=True)
         value_counts.rename(facet,inplace=True)
