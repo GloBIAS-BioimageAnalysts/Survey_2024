@@ -119,15 +119,12 @@ def select_all_that_apply_hist_facet(df,question_col,plot_filename,options_dict=
     plt.savefig(plot_filename)
 
 def wordcloud_func(col_name,new_stop_list,plot_filename,df,**kwargs):
-    """wrapper
+    """wrapper around https://amueller.github.io/word_cloud/generated/wordcloud.WordCloud.html
+    See that documentation for more kwargs to pass (colors, max words, etc)
     """
     all_stopwords = list(STOPWORDS)+new_stop_list+col_name.split(' ')
     wordcloud_words = ' '.join(list(df[col_name].dropna())).lower()
-    
-    import random
-    
-    
-    
+
     wc = WordCloud(background_color='white',collocations=False,min_word_length=4,min_font_size=34,
                    stopwords=all_stopwords,regexp=r"\w[\w'\/]+",relative_scaling=1,**kwargs
                   ).generate(wordcloud_words)
