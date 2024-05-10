@@ -128,7 +128,7 @@ def wordcloud_func(col_name,new_stop_list,plot_filename,df,**kwargs):
     wc = WordCloud(background_color='white',collocations=False,min_word_length=4,min_font_size=34,
                    stopwords=all_stopwords,regexp=r"\w[\w'\/]+",relative_scaling=1,**kwargs
                   ).generate(wordcloud_words)
-    plt.title(col_name,wrap=True)
+    plt.title(col_name+"\n",wrap=True)
     plt.axis('off')
     plt.imshow(wc)
-    plt.savefig(plot_filename)
+    plt.savefig(plot_filename, bbox_inches='tight')
