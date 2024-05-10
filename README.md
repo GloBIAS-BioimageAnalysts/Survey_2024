@@ -24,3 +24,5 @@ Check out www.globias.org
 - Figures can be saved by running `plt.savefig("../figures/FigureName.png", bbox_inches='tight')`
 
 - Large bits of code, or code that can be reused should be added to `notebooks/utils.py`
+
+- You can run `python scratch/generate_figures_readme.py ` to automatically update the file `figures/README.md` with all the images in the directory
