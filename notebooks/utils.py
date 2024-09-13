@@ -62,7 +62,8 @@ def normalized_percent_graphs(df, columns, plot_filename, include_null=False,
     p.save(loc=plot_filename, bbox_inches="tight")
 
 def select_all_that_apply_hist_facet(df,question_col,plot_filename,options_dict=False,
-                                     facet_col=False, drop_empty=True,how='facet',ylabel='Options',**kwargs):
+                                     facet_col=False, drop_empty=True,how='facet',delim=", ",
+                                     ylabel='Options',**kwargs):
     """
     Make a faceted (or not) graph from a "select all that apply" column
     You can drop just empties in the facet col ('facet'), question('question'),
@@ -98,8 +99,17 @@ def select_all_that_apply_hist_facet(df,question_col,plot_filename,options_dict=
             sub_df = sub_df.query(f'`{question_col}` != ""')
         flat_list = []
         for x in sub_df[question_col]:
-            flat_list+=(x.split(', '))
-        flat_list = [options_dict[x] for x in flat_list]
+            #messy to handle delims that are fancy, like parentheses
+            if delim[0]!= ",":
+                to_append = delim.split(",")[0]
+                split_x = x.split(delim)
+                sub_split = [x+to_append for x in split_x[:-1]]
+                flat_list+= sub_split+[split_x[-1]]
+            else:
+                flat_list+=(x.split(delim))
+        if options_dict:
+            flat_list = [options_dict[x] for x in flat_list]
+        
         flat_series = pandas.Series(flat_list,name=facet)
         value_counts = flat_series.value_counts(normalize=True)
         value_counts.rename(facet,inplace=True)
@@ -116,7 +126,11 @@ def select_all_that_apply_hist_facet(df,question_col,plot_filename,options_dict=
         sns.catplot(melted,y='percent',x='value',hue='variable',kind='bar', **kwargs)
         plt.ylabel(ylabel)
         plt.xlabel("Fraction of answers")
-    plt.savefig(plot_filename)
+    if plot_filename[-4]!='.': #if we haven't given an extension, assume you want both png and svg
+        plt.savefig(plot_filename+'.png')
+        plt.savefig(plot_filename+'.svg')
+    else:
+        plt.savefig(plot_filename)
 
 def wordcloud_func(col_name,new_stop_list,plot_filename,df,**kwargs):
     """wrapper around https://amueller.github.io/word_cloud/generated/wordcloud.WordCloud.html
