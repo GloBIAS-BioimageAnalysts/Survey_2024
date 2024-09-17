@@ -6,7 +6,7 @@ import wordcloud
 from wordcloud import WordCloud, STOPWORDS
 
 def normalized_percent_graphs(df, columns, plot_filename, include_null=False,
-                              prints=False,xlabel='Source'):
+                              prints=False,xlabel='Source',cmap=False):
     """
     Takes dataframes and columns (either a list or a dict
     wherein the key is the real column name and the values are
@@ -54,9 +54,13 @@ def normalized_percent_graphs(df, columns, plot_filename, include_null=False,
         print("Melted results",melted)
     melted
 
+    if not cmap:
+        cmap="deep"
+
     p = (so.Plot(melted,x='variable',y='value',color='percent')
         .add(so.Bar(), so.Stack())
         .layout(size=(8,4))
+        .scale(color=cmap)
         .label(x=xlabel,y="Fraction of answers",legend='Budget fraction')
         )
     if plot_filename[-4]!='.': #if we haven't given an extension, assume you want both png and svg
@@ -128,8 +132,10 @@ def select_all_that_apply_hist_facet(df,question_col,plot_filename,options_dict=
     if how=='facet':
         g = sns.catplot(melted,y='percent',x='value',col='variable',kind='bar',**kwargs)
         g.set_axis_labels("Fraction of answers",ylabel)
+        g.set_titles(col_template=f"{facet_col} = "+"{col_name}")
     elif how=='color':
-        sns.catplot(melted,y='percent',x='value',hue='variable',kind='bar', **kwargs)
+        g = sns.catplot(melted,y='percent',x='value',hue='variable',kind='bar', **kwargs)
+        g.legend.set_title(facet_col)
         plt.ylabel(ylabel)
         plt.xlabel("Fraction of answers")
     if plot_filename[-4]!='.': #if we haven't given an extension, assume you want both png and svg
