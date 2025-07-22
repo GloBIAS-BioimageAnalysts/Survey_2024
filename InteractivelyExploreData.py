@@ -6,23 +6,10 @@ app = marimo.App(width="medium")
 
 @app.cell
 def _():
-    import micropip
-
-    return (micropip,)
-
-
-@app.cell
-async def _(micropip):
-    await(micropip.install("pygwalker",keep_going=True))
-    return
-
-
-@app.cell
-def _():
     import marimo as mo
     import pandas
-    import pygwalker
-    return mo, pandas, pygwalker
+    #import pygwalker #only when running locally, but fun!
+    return mo, pandas
 
 
 @app.cell
@@ -44,7 +31,7 @@ def _(mo):
         """
     Please read our preprint on [arXiv](https://arxiv.org/abs/2507.06407)
 
-    Want to play with the data yourself? Try a couple of tools below!
+    Want to play with the data yourself? Try it below!
     """
     )
     return
@@ -64,20 +51,20 @@ def _(df, mo):
 
 
 @app.cell
-def _(mo):
-    mo.md(
-        """
+def _():
+    #'''mo.md(
+    #    """
     ## Explore, transform, or graph the data in Pygwalker
-
-    (If you're having trouble, check your aggregation and stacking settings, and try making sure "row count" is in your axes!)
-    """
-    )
+    #
+    #(If you're having trouble, check your aggregation and stacking settings, and try making sure "row count" is in your axes!)
+    #"""
+    #)''' #doesn't work in wasm
     return
 
 
 @app.cell
-def _(df, pygwalker):
-    pygwalker.walk(df)
+def _():
+    #pygwalker.walk(df)
     return
 
 
