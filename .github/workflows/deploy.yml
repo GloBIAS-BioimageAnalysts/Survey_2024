@@ -1,0 +1,60 @@
+name: 
+  deploy-notebook
+
+on:
+  push:
+    branches:
+      - "marimonotebook"
+  workflow_dispatch:
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        defaults:
+          run:
+            shell: bash -el {0}
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+            - name: Cache conda
+              uses: actions/cache@v3
+              env:
+                # Increase this value to reset cache if etc/example-environment.yml has not changed
+                CACHE_NUMBER: 0
+              with:
+                path: ~/conda_pkgs_dir
+                key:
+                  ${{ runner.os }}-conda-${{ env.CACHE_NUMBER }}-${{
+                  hashFiles('etc/example-environment.yml') }}
+            - uses: conda-incubator/setup-miniconda@v3
+              with:
+                environment-file: interactive_graphing.yml
+                activate-environment: interactive_graphing
+                auto-activate-base: false
+                #use-only-tar-bz2: true # IMPORTANT: This needs to be set for caching to work properly!
+            - name: 📄 Export notebook
+              run: |
+                  marimo export html-wasm InteractivelyExploreData.py -o . --mode run
+
+            - name: 📦 Upload Pages Artifact
+              uses: actions/upload-pages-artifact@v3
+              with:
+                  path: .
+
+    deploy:
+        needs: build
+        runs-on: ubuntu-latest
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+
+        permissions:
+            pages: write
+            id-token: write
+
+        steps:
+            - name: 🌐 Deploy to GitHub Pages
+              id: deployment
+              uses: actions/deploy-pages@v4
+              with:
+                  artifact_name: github-pages
