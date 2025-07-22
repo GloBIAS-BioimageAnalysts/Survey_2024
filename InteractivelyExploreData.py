@@ -16,7 +16,7 @@ def _():
 def _(pandas):
     #Uncomment lines 2 and 3 to run on GH Actions in WASM; uncomment line 4 to run locally
     import pyodide #only need for running remotely; 
-    df = pandas.read_csv(pyodide.http.open_url("https://raw.githubusercontent.com/GloBIAS-BioimageAnalysts/Survey_2024/refs/heads/marimonotebook/data/survey2024_headersandcommascleaned_recleaned.csv").read())
+    df = pandas.read_csv(pyodide.http.open_url("https://raw.githubusercontent.com/GloBIAS-BioimageAnalysts/Survey_2024/refs/heads/marimonotebook/data/survey2024_headersandcommascleaned_recleaned.csv"))
     # df = pandas.read_csv("data/survey2024_headersandcommascleaned_recleaned.csv")
     df.drop(columns=["Timestamp"],inplace=True)
     return (df,)
