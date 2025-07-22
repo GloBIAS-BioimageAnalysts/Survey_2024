@@ -5,9 +5,15 @@ app = marimo.App(width="medium")
 
 
 @app.cell
-async def _():
+def _():
     import micropip
-    await(micropip.install("pygwalker"))
+
+    return (micropip,)
+
+
+@app.cell
+async def _(micropip):
+    await(micropip.install("pygwalker",keep_going=True))
     return
 
 
