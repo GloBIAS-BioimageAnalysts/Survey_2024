@@ -5,6 +5,13 @@ app = marimo.App(width="medium")
 
 
 @app.cell
+async def _():
+    import micropip
+    await(micropip.install("pygwalker"))
+    return
+
+
+@app.cell
 def _():
     import marimo as mo
     import pandas
