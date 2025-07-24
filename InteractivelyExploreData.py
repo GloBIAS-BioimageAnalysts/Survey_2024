@@ -32,7 +32,7 @@ def _(mo):
 def _(mo):
     mo.md(
         """
-    Please read our preprint on [arXiv](https://arxiv.org/abs/2507.06407)
+    Please read our preprint on [arXiv](https://arxiv.org/abs/2507.06407) to learn more about GloBIAS!
 
     Want to play with the data yourself? Try it below!
     """
