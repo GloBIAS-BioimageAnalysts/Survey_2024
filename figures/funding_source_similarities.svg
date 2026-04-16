@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="265"
+   height="241.33985900878906"
+   id="svg82"
+   sodipodi:docname="funding_source_similarities.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   inkscape:export-filename="funding_source_similarities_by_category.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview82"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.97787411"
+     inkscape:cx="132.94145"
+     inkscape:cy="120.66993"
+     inkscape:window-width="1720"
+     inkscape:window-height="929"
+     inkscape:window-x="0"
+     inkscape:window-y="38"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg82" />
+  <defs
+     id="defs3">
+    <linearGradient
+       id="BLwXATdTxKaD"
+       x1="0px"
+       x2="200px"
+       y1="0px"
+       y2="12px"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="blue"
+         id="stop1" />
+      <stop
+         offset="0.5"
+         stop-color="white"
+         id="stop2" />
+      <stop
+         offset="1"
+         stop-color="red"
+         id="stop3" />
+    </linearGradient>
+    <clipPath
+       id="rQqLxAcxQUZX">
+      <path
+         fill="none"
+         stroke="white"
+         paint-order="fill stroke markers"
+         d=" M 0 0 L 97.33985900878906 0 L 97.33985900878906 98 L 0 98 L 0 0 Z"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="path3" />
+    </clipPath>
+  </defs>
+  <g
+     id="g82">
+    <g
+       transform="translate(15,0) translate(25,0)"
+       id="g7">
+      <rect
+         fill="url(#BLwXATdTxKaD)"
+         stroke="none"
+         x="0"
+         y="0"
+         width="200"
+         height="12"
+         id="rect3" />
+      <rect
+         fill="url(#BLwXATdTxKaD)"
+         stroke="LightGrey"
+         x="0"
+         y="0"
+         width="200"
+         height="12"
+         stroke-miterlimit="10"
+         stroke-dasharray=""
+         id="rect4" />
+      <text
+         fill="black"
+         stroke="none"
+         font-family="Helvetica"
+         font-size="11px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="normal"
+         x="0"
+         y="14"
+         text-anchor="middle"
+         dominant-baseline="text-before-edge"
+         id="text4">-1.00</text>
+      <text
+         fill="black"
+         stroke="none"
+         font-family="Helvetica"
+         font-size="11px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="normal"
+         x="200"
+         y="14"
+         text-anchor="middle"
+         dominant-baseline="text-before-edge"
+         id="text5">1.00</text>
+      <text
+         fill="black"
+         stroke="none"
+         font-family="Helvetica"
+         font-size="11px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="normal"
+         x="100"
+         y="14"
+         text-anchor="middle"
+         dominant-baseline="text-before-edge"
+         id="text6">0.00</text>
+      <g
+         transform="translate(250,0)"
+         id="g6" />
+    </g>
+    <g
+       transform="translate(15,40)"
+       id="g8" />
+    <g
+       transform="translate(15,40)"
+       id="g9" />
+    <g
+       transform="translate(15,40)"
+       id="g10" />
+    <g
+       transform="translate(15,40)"
+       id="g11" />
+    <g
+       transform="translate(15,40)"
+       id="g12" />
+    <g
+       transform="translate(15,40)"
+       id="g13" />
+    <g
+       transform="translate(12.964981079101562,40)"
+       fill="rgb(0, 0, 0)"
+       id="g22">
+      <path
+         fill=""
+         stroke="#808080"
+         paint-order="fill stroke markers"
+         d=" M 14 0 L 14 97.33985900878906 M 28 0 L 28 97.33985900878906 M 42 0 L 42 97.33985900878906 M 56 0 L 56 97.33985900878906 M 70 0 L 70 97.33985900878906 M 84 0 L 84 97.33985900878906 M 98 0 L 98 97.33985900878906"
+         stroke-miterlimit="10"
+         stroke-width="0.1"
+         stroke-dasharray=""
+         id="path13" />
+      <g
+         transform="translate(2,0) translate(0,0)"
+         id="g21">
+        <g
+           transform="translate(7,96.33985900878906) rotate(-90,0,0)"
+           id="g14">
+          <text
+             fill=""
+             stroke="none"
+             font-family="Helvetica"
+             font-size="12px"
+             font-style="normal"
+             font-weight="normal"
+             text-decoration="normal"
+             x="0"
+             y="0"
+             text-anchor="start"
+             dominant-baseline="central"
+             id="text13">grants (mine)</text>
+        </g>
+        <g
+           transform="translate(21,96.33985900878906) rotate(-90,0,0)"
+           id="g15">
+          <text
+             fill="rgb(0, 0, 0)"
+             stroke="none"
+             font-family="Helvetica"
+             font-size="12px"
+             font-style="normal"
+             font-weight="normal"
+             text-decoration="normal"
+             x="0"
+             y="0"
+             text-anchor="start"
+             dominant-baseline="central"
+             id="text14">grants (others')</text>
+        </g>
+        <g
+           transform="translate(35,96.33985900878906) rotate(-90,0,0)"
+           id="g16">
+          <text
+             fill="rgb(0, 0, 0)"
+             stroke="none"
+             font-family="Helvetica"
+             font-size="12px"
+             font-style="normal"
+             font-weight="normal"
+             text-decoration="normal"
+             x="0"
+             y="0"
+             text-anchor="start"
+             dominant-baseline="central"
+             id="text15">internal</text>
+        </g>
+        <g
+           transform="translate(49,96.33985900878906) rotate(-90,0,0)"
+           id="g17">
+          <text
+             fill="rgb(0, 0, 0)"
+             stroke="none"
+             font-family="Helvetica"
+             font-size="12px"
+             font-style="normal"
+             font-weight="normal"
+             text-decoration="normal"
+             x="0"
+             y="0"
+             text-anchor="start"
+             dominant-baseline="central"
+             id="text16">consulting</text>
+        </g>
+        <g
+           transform="translate(63,96.33985900878906) rotate(-90,0,0)"
+           id="g18">
+          <text
+             fill="rgb(0, 0, 0)"
+             stroke="none"
+             font-family="Helvetica"
+             font-size="12px"
+             font-style="normal"
+             font-weight="normal"
+             text-decoration="normal"
+             x="0"
+             y="0"
+             text-anchor="start"
+             dominant-baseline="central"
+             id="text17">analysis projects</text>
+        </g>
+        <g
+           transform="translate(77,96.33985900878906) rotate(-90,0,0)"
+           id="g19">
+          <text
+             fill="rgb(0, 0, 0)"
+             stroke="none"
+             font-family="Helvetica"
+             font-size="12px"
+             font-style="normal"
+             font-weight="normal"
+             text-decoration="normal"
+             x="0"
+             y="0"
+             text-anchor="start"
+             dominant-baseline="central"
+             id="text18">microscope fees</text>
+        </g>
+        <g
+           transform="translate(91,96.33985900878906) rotate(-90,0,0)"
+           id="g20">
+          <text
+             fill="rgb(0, 0, 0)"
+             stroke="none"
+             font-family="Helvetica"
+             font-size="12px"
+             font-style="normal"
+             font-weight="normal"
+             text-decoration="normal"
+             x="0"
+             y="0"
+             text-anchor="start"
+             dominant-baseline="central"
+             id="text19">I don't know</text>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(12.964981079101562,143.33985900878906) translate(0,0)"
+       id="g72">
+      <rect
+         fill="red"
+         stroke="none"
+         x="0"
+         y="0"
+         width="14"
+         height="14"
+         id="rect23" />
+      <rect
+         fill="#f1f1ff"
+         stroke="none"
+         x="14"
+         y="0"
+         width="14"
+         height="14"
+         id="rect24" />
+      <rect
+         fill="#efefff"
+         stroke="none"
+         x="28"
+         y="0"
+         width="14"
+         height="14"
+         id="rect25" />
+      <rect
+         fill="#ffdbdb"
+         stroke="none"
+         x="42"
+         y="0"
+         width="14"
+         height="14"
+         id="rect26" />
+      <rect
+         fill="#fbfbff"
+         stroke="none"
+         x="56"
+         y="0"
+         width="14"
+         height="14"
+         id="rect27" />
+      <rect
+         fill="#ffeeee"
+         stroke="none"
+         x="70"
+         y="0"
+         width="14"
+         height="14"
+         id="rect28" />
+      <rect
+         fill="#b9b9ff"
+         stroke="none"
+         x="84"
+         y="0"
+         width="14"
+         height="14"
+         id="rect29" />
+      <rect
+         fill="#f1f1ff"
+         stroke="none"
+         x="0"
+         y="14"
+         width="14"
+         height="14"
+         id="rect30" />
+      <rect
+         fill="red"
+         stroke="none"
+         x="14"
+         y="14"
+         width="14"
+         height="14"
+         id="rect31" />
+      <rect
+         fill="#f6f6ff"
+         stroke="none"
+         x="28"
+         y="14"
+         width="14"
+         height="14"
+         id="rect32" />
+      <rect
+         fill="#f9f9ff"
+         stroke="none"
+         x="42"
+         y="14"
+         width="14"
+         height="14"
+         id="rect33" />
+      <rect
+         fill="#ececff"
+         stroke="none"
+         x="56"
+         y="14"
+         width="14"
+         height="14"
+         id="rect34" />
+      <rect
+         fill="#fcfcff"
+         stroke="none"
+         x="70"
+         y="14"
+         width="14"
+         height="14"
+         id="rect35" />
+      <rect
+         fill="#b0b0ff"
+         stroke="none"
+         x="84"
+         y="14"
+         width="14"
+         height="14"
+         id="rect36" />
+      <rect
+         fill="#efefff"
+         stroke="none"
+         x="0"
+         y="28"
+         width="14"
+         height="14"
+         id="rect37" />
+      <rect
+         fill="#f6f6ff"
+         stroke="none"
+         x="14"
+         y="28"
+         width="14"
+         height="14"
+         id="rect38" />
+      <rect
+         fill="red"
+         stroke="none"
+         x="28"
+         y="28"
+         width="14"
+         height="14"
+         id="rect39" />
+      <rect
+         fill="#f7f7ff"
+         stroke="none"
+         x="42"
+         y="28"
+         width="14"
+         height="14"
+         id="rect40" />
+      <rect
+         fill="#e6e6ff"
+         stroke="none"
+         x="56"
+         y="28"
+         width="14"
+         height="14"
+         id="rect41" />
+      <rect
+         fill="#ececff"
+         stroke="none"
+         x="70"
+         y="28"
+         width="14"
+         height="14"
+         id="rect42" />
+      <rect
+         fill="#8a8aff"
+         stroke="none"
+         x="84"
+         y="28"
+         width="14"
+         height="14"
+         id="rect43" />
+      <rect
+         fill="#ffdbdb"
+         stroke="none"
+         x="0"
+         y="42"
+         width="14"
+         height="14"
+         id="rect44" />
+      <rect
+         fill="#f9f9ff"
+         stroke="none"
+         x="14"
+         y="42"
+         width="14"
+         height="14"
+         id="rect45" />
+      <rect
+         fill="#f7f7ff"
+         stroke="none"
+         x="28"
+         y="42"
+         width="14"
+         height="14"
+         id="rect46" />
+      <rect
+         fill="red"
+         stroke="none"
+         x="42"
+         y="42"
+         width="14"
+         height="14"
+         id="rect47" />
+      <rect
+         fill="#ffbbbb"
+         stroke="none"
+         x="56"
+         y="42"
+         width="14"
+         height="14"
+         id="rect48" />
+      <rect
+         fill="#ffe3e3"
+         stroke="none"
+         x="70"
+         y="42"
+         width="14"
+         height="14"
+         id="rect49" />
+      <rect
+         fill="#d7d7ff"
+         stroke="none"
+         x="84"
+         y="42"
+         width="14"
+         height="14"
+         id="rect50" />
+      <rect
+         fill="#fbfbff"
+         stroke="none"
+         x="0"
+         y="56"
+         width="14"
+         height="14"
+         id="rect51" />
+      <rect
+         fill="#ececff"
+         stroke="none"
+         x="14"
+         y="56"
+         width="14"
+         height="14"
+         id="rect52" />
+      <rect
+         fill="#e6e6ff"
+         stroke="none"
+         x="28"
+         y="56"
+         width="14"
+         height="14"
+         id="rect53" />
+      <rect
+         fill="#ffbbbb"
+         stroke="none"
+         x="42"
+         y="56"
+         width="14"
+         height="14"
+         id="rect54" />
+      <rect
+         fill="red"
+         stroke="none"
+         x="56"
+         y="56"
+         width="14"
+         height="14"
+         id="rect55" />
+      <rect
+         fill="#ffd9d9"
+         stroke="none"
+         x="70"
+         y="56"
+         width="14"
+         height="14"
+         id="rect56" />
+      <rect
+         fill="#c3c3ff"
+         stroke="none"
+         x="84"
+         y="56"
+         width="14"
+         height="14"
+         id="rect57" />
+      <rect
+         fill="#ffeeee"
+         stroke="none"
+         x="0"
+         y="70"
+         width="14"
+         height="14"
+         id="rect58" />
+      <rect
+         fill="#fcfcff"
+         stroke="none"
+         x="14"
+         y="70"
+         width="14"
+         height="14"
+         id="rect59" />
+      <rect
+         fill="#ececff"
+         stroke="none"
+         x="28"
+         y="70"
+         width="14"
+         height="14"
+         id="rect60" />
+      <rect
+         fill="#ffe3e3"
+         stroke="none"
+         x="42"
+         y="70"
+         width="14"
+         height="14"
+         id="rect61" />
+      <rect
+         fill="#ffd9d9"
+         stroke="none"
+         x="56"
+         y="70"
+         width="14"
+         height="14"
+         id="rect62" />
+      <rect
+         fill="red"
+         stroke="none"
+         x="70"
+         y="70"
+         width="14"
+         height="14"
+         id="rect63" />
+      <rect
+         fill="#a4a4ff"
+         stroke="none"
+         x="84"
+         y="70"
+         width="14"
+         height="14"
+         id="rect64" />
+      <rect
+         fill="#b9b9ff"
+         stroke="none"
+         x="0"
+         y="84"
+         width="14"
+         height="14"
+         id="rect65" />
+      <rect
+         fill="#b0b0ff"
+         stroke="none"
+         x="14"
+         y="84"
+         width="14"
+         height="14"
+         id="rect66" />
+      <rect
+         fill="#8a8aff"
+         stroke="none"
+         x="28"
+         y="84"
+         width="14"
+         height="14"
+         id="rect67" />
+      <rect
+         fill="#d7d7ff"
+         stroke="none"
+         x="42"
+         y="84"
+         width="14"
+         height="14"
+         id="rect68" />
+      <rect
+         fill="#c3c3ff"
+         stroke="none"
+         x="56"
+         y="84"
+         width="14"
+         height="14"
+         id="rect69" />
+      <rect
+         fill="#a4a4ff"
+         stroke="none"
+         x="70"
+         y="84"
+         width="14"
+         height="14"
+         id="rect70" />
+      <rect
+         fill="red"
+         stroke="none"
+         x="84"
+         y="84"
+         width="14"
+         height="14"
+         id="rect71" />
+      <path
+         fill="none"
+         stroke="#808080"
+         paint-order="fill stroke markers"
+         d=" M 0 0 L 14 0 L 14 14 L 0 14 L 0 0 Z M 14 0 L 28 0 L 28 14 L 14 14 L 14 0 Z M 28 0 L 42 0 L 42 14 L 28 14 L 28 0 Z M 42 0 L 56 0 L 56 14 L 42 14 L 42 0 Z M 56 0 L 70 0 L 70 14 L 56 14 L 56 0 Z M 70 0 L 84 0 L 84 14 L 70 14 L 70 0 Z M 84 0 L 98 0 L 98 14 L 84 14 L 84 0 Z M 0 14 L 14 14 L 14 28 L 0 28 L 0 14 Z M 14 14 L 28 14 L 28 28 L 14 28 L 14 14 Z M 28 14 L 42 14 L 42 28 L 28 28 L 28 14 Z M 42 14 L 56 14 L 56 28 L 42 28 L 42 14 Z M 56 14 L 70 14 L 70 28 L 56 28 L 56 14 Z M 70 14 L 84 14 L 84 28 L 70 28 L 70 14 Z M 84 14 L 98 14 L 98 28 L 84 28 L 84 14 Z M 0 28 L 14 28 L 14 42 L 0 42 L 0 28 Z M 14 28 L 28 28 L 28 42 L 14 42 L 14 28 Z M 28 28 L 42 28 L 42 42 L 28 42 L 28 28 Z M 42 28 L 56 28 L 56 42 L 42 42 L 42 28 Z M 56 28 L 70 28 L 70 42 L 56 42 L 56 28 Z M 70 28 L 84 28 L 84 42 L 70 42 L 70 28 Z M 84 28 L 98 28 L 98 42 L 84 42 L 84 28 Z M 0 42 L 14 42 L 14 56 L 0 56 L 0 42 Z M 14 42 L 28 42 L 28 56 L 14 56 L 14 42 Z M 28 42 L 42 42 L 42 56 L 28 56 L 28 42 Z M 42 42 L 56 42 L 56 56 L 42 56 L 42 42 Z M 56 42 L 70 42 L 70 56 L 56 56 L 56 42 Z M 70 42 L 84 42 L 84 56 L 70 56 L 70 42 Z M 84 42 L 98 42 L 98 56 L 84 56 L 84 42 Z M 0 56 L 14 56 L 14 70 L 0 70 L 0 56 Z M 14 56 L 28 56 L 28 70 L 14 70 L 14 56 Z M 28 56 L 42 56 L 42 70 L 28 70 L 28 56 Z M 42 56 L 56 56 L 56 70 L 42 70 L 42 56 Z M 56 56 L 70 56 L 70 70 L 56 70 L 56 56 Z M 70 56 L 84 56 L 84 70 L 70 70 L 70 56 Z M 84 56 L 98 56 L 98 70 L 84 70 L 84 56 Z M 0 70 L 14 70 L 14 84 L 0 84 L 0 70 Z M 14 70 L 28 70 L 28 84 L 14 84 L 14 70 Z M 28 70 L 42 70 L 42 84 L 28 84 L 28 70 Z M 42 70 L 56 70 L 56 84 L 42 84 L 42 70 Z M 56 70 L 70 70 L 70 84 L 56 84 L 56 70 Z M 70 70 L 84 70 L 84 84 L 70 84 L 70 70 Z M 84 70 L 98 70 L 98 84 L 84 84 L 84 70 Z M 0 84 L 14 84 L 14 98 L 0 98 L 0 84 Z M 14 84 L 28 84 L 28 98 L 14 98 L 14 84 Z M 28 84 L 42 84 L 42 98 L 28 98 L 28 84 Z M 42 84 L 56 84 L 56 98 L 42 98 L 42 84 Z M 56 84 L 70 84 L 70 98 L 56 98 L 56 84 Z M 70 84 L 84 84 L 84 98 L 70 98 L 70 84 Z M 84 84 L 98 84 L 98 98 L 84 98 L 84 84 Z"
+         stroke-miterlimit="10"
+         stroke-width="0.1"
+         stroke-dasharray=""
+         id="path71" />
+      <g
+         transform="translate(0,0)"
+         id="g71" />
+    </g>
+    <g
+       transform="translate(116.96498107910156,143.33985900878906)"
+       clip-path="url(#rQqLxAcxQUZX)"
+       id="g80">
+      <g
+         fill="rgb(0, 0, 0)"
+         id="g79">
+        <path
+           fill=""
+           stroke="#808080"
+           paint-order="fill stroke markers"
+           d=" M 0 14 L 97.33985900878906 14 M 0 28 L 97.33985900878906 28 M 0 42 L 97.33985900878906 42 M 0 56 L 97.33985900878906 56 M 0 70 L 97.33985900878906 70 M 0 84 L 97.33985900878906 84 M 0 98 L 97.33985900878906 98"
+           stroke-miterlimit="10"
+           stroke-width="0.1"
+           stroke-dasharray=""
+           id="path72" />
+        <g
+           transform="translate(0,2)"
+           id="g78">
+          <text
+             fill=""
+             stroke="none"
+             font-family="Helvetica"
+             font-size="12px"
+             font-style="normal"
+             font-weight="normal"
+             text-decoration="normal"
+             x="1"
+             y="7"
+             text-anchor="start"
+             dominant-baseline="central"
+             id="text72">grants (mine)</text>
+          <text
+             fill=""
+             stroke="none"
+             font-family="Helvetica"
+             font-size="12px"
+             font-style="normal"
+             font-weight="normal"
+             text-decoration="normal"
+             x="1"
+             y="21"
+             text-anchor="start"
+             dominant-baseline="central"
+             id="text73">grants (others')</text>
+          <text
+             fill=""
+             stroke="none"
+             font-family="Helvetica"
+             font-size="12px"
+             font-style="normal"
+             font-weight="normal"
+             text-decoration="normal"
+             x="1"
+             y="35"
+             text-anchor="start"
+             dominant-baseline="central"
+             id="text74">internal</text>
+          <text
+             fill=""
+             stroke="none"
+             font-family="Helvetica"
+             font-size="12px"
+             font-style="normal"
+             font-weight="normal"
+             text-decoration="normal"
+             x="1"
+             y="49"
+             text-anchor="start"
+             dominant-baseline="central"
+             id="text75">consulting</text>
+          <text
+             fill=""
+             stroke="none"
+             font-family="Helvetica"
+             font-size="12px"
+             font-style="normal"
+             font-weight="normal"
+             text-decoration="normal"
+             x="1"
+             y="63"
+             text-anchor="start"
+             dominant-baseline="central"
+             id="text76">analysis projects</text>
+          <text
+             fill=""
+             stroke="none"
+             font-family="Helvetica"
+             font-size="12px"
+             font-style="normal"
+             font-weight="normal"
+             text-decoration="normal"
+             x="1"
+             y="77"
+             text-anchor="start"
+             dominant-baseline="central"
+             id="text77">microscope fees</text>
+          <text
+             fill=""
+             stroke="none"
+             font-family="Helvetica"
+             font-size="12px"
+             font-style="normal"
+             font-weight="normal"
+             text-decoration="normal"
+             x="1"
+             y="91"
+             text-anchor="start"
+             dominant-baseline="central"
+             id="text78">I don't know</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
