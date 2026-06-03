@@ -1,0 +1,21 @@
+[project]
+authors = ["GloBIAS Survey24 Workgroup <survey24@globias.org>"]
+channels = ["conda-forge"]
+name = "Survey_2024"
+platforms = ["win-64", "osx-arm64", "osx-64", "linux-64"]
+version = "0.1.0"
+description = "Analysis of 2024 Survey Results."
+license-file = "LICENSE"
+readme = "README.md"
+repository = "https://github.com/GloBIAS-BioimageAnalysts/Survey_2024"
+
+[tasks]
+
+[dependencies]
+python = ">=3.10"
+jupyterlab = ">=4.4.1,<5"
+pandas = ">=2.2.3,<3"
+matplotlib = ">=3.10.1,<4"
+seaborn = ">=0.13.2,<0.14"
+wordcloud = ">=1.9.4,<2"
+geopandas = ">=1.0.1,<2"
